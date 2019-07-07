@@ -8,3 +8,6 @@ Access the following address in your browser.
 
 http://ESP32_ADDRESS/app/
 
+## Screenshot
+
+<img src="screenshot.png" width="750">
