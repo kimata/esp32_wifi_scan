@@ -1,0 +1,6 @@
+wifi_config.h
+sdkconfig.old
+
+react/package-lock.json
+react/node_modules/
+react/build/
