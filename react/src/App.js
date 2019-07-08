@@ -32,7 +32,7 @@ class WiFiApInfo extends React.Component {
   }
 
   componentDidMount() {
-    return fetch('http://192.168.2.179/api/')
+    return fetch('/api/')
       .then((res) => res.json())
       .then((resJson) => {
         this.setState({
