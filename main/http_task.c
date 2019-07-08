@@ -17,12 +17,17 @@
 static wifi_ap_record_t ap_list[32];
 static uint16_t ap_count = ARRAY_SIZE_OF(ap_list);
 
-static wifi_scan_config_t SCAN_CONFIG = {
+static const wifi_scan_time_t SCAN_TIME = {
+    .passive = 1000,
+};
+
+static const wifi_scan_config_t SCAN_CONFIG = {
     .ssid = 0,
     .bssid = 0,
     .channel = 0,
     .show_hidden = true,
     .scan_type = WIFI_SCAN_TYPE_PASSIVE,
+    .scan_time = SCAN_TIME,
 };
 
 extern const unsigned char index_html_start[]       asm("_binary_index_html_start");
